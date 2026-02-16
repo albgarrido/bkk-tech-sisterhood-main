@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKK Tech Sisterhood | Women in AI & Tech Bangkok</title>
+    <meta name="description" content="A high-aesthetic community for women in Bangkok mastering AI, Tech, and Digital Design. Join our sisterhood today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'soft-pink': '#FADADD',
+                        'mint-green': '#E0F2F1',
+                        'tech-purple': '#9D8DF1',
+                        'sisterhood-dark': '#2D3436'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#FFFBFC] text-sisterhood-dark font-sans overflow-x-hidden">
+
+    <!-- Header / Nav -->
+    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-soft-pink px-6 py-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-tech-purple italic">BKK Tech Sisterhood</div>
+            
+            <div class="hidden md:flex space-x-8 items-center font-semibold text-sm tracking-tight">
+                <a href="#about" class="hover:text-tech-purple transition-colors">The Vision</a>
+                <a href="#events" class="hover:text-tech-purple transition-colors">Gatherings</a>
+                <a href="#work-groups" class="hover:text-tech-purple transition-colors">Coworking</a>
+                <a href="https://forms.google.com" target="_blank" class="bg-soft-pink px-6 py-2 rounded-full hover:bg-tech-purple hover:text-white transition-all transform hover:scale-105 shadow-sm">Join the Sisterhood</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="md:hidden text-sisterhood-dark focus:outline-none" aria-label="Toggle Menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-4 border-b border-soft-pink space-y-4 shadow-xl">
+            <a href="#about" class="block font-semibold py-2">The Vision</a>
+            <a href="#events" class="block font-semibold py-2">Gatherings</a>
+            <a href="#work-groups" class="block font-semibold py-2">Coworking</a>
+            <a href="https://forms.google.com" target="_blank" class="block bg-soft-pink text-center py-2 rounded-full font-bold">Apply to Join</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <!-- Organic Static Blobs -->
+            <div class="absolute top-20 -left-20 w-72 h-72 bg-mint-green rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob"></div>
+            <div class="absolute top-40 -right-20 w-96 h-96 bg-soft-pink rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-2000"></div>
+
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="space-y-8">
+                    <div class="inline-block px-4 py-1 rounded-full bg-tech-purple/10 text-tech-purple font-semibold text-xs tracking-widest uppercase">
+                        Based in Bangkok
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-serif leading-tight">
+                        Yes She <br><span class="text-tech-purple italic font-bold">Can Code.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed">
+                        A beautiful community for the next generation of women in Tech and AI. We combine soft aesthetics with hard skills to build a more inclusive future for Bangkok's digital landscape.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://forms.google.com" target="_blank" class="bg-sisterhood-dark text-white text-center px-10 py-5 rounded-full font-bold hover:bg-tech-purple transition-all shadow-lg hover:shadow-tech-purple/20">Become a Member</a>
+                        <a href="#events" class="border-2 border-sisterhood-dark text-center px-10 py-5 rounded-full font-bold hover:bg-sisterhood-dark hover:text-white transition-all">Explore Events</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div class="relative z-20 overflow-hidden rounded-[2.5rem] shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+                        <img src="https://images.unsplash.com/photo-1573164713714-d95e43bc94ea?w=1000&h=1200&fit=crop" alt="Women collaborating in a tech space" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Kawaii Stickers -->
+                    <div class="absolute -bottom-8 -left-8 z-30 bg-white p-5 rounded-2xl shadow-xl border-2 border-soft-pink rotate-[-5deg] sticker">
+                        <span class="text-2xl font-serif italic text-tech-purple font-bold">Girls Make Code ✨</span>
+                    </div>
+                    <div class="absolute -top-6 -right-6 z-30 bg-mint-green p-4 rounded-full shadow-lg border-2 border-white rotate-[10deg] sticker">
+                        <span class="text-2xl">👩‍💻</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 bg-white">
+            <div class="container mx-auto px-6 flex flex-col items-center">
+                <div class="max-w-4xl text-center space-y-12">
+                    <h2 class="text-4xl md:text-6xl font-serif italic">Our Etherea Vision</h2>
+                    <div class="grid md:grid-cols-2 gap-12 text-left items-center pt-8">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=800&fit=crop" alt="Collaborative learning environment" class="rounded-[3rem] shadow-xl border-8 border-mint-green/30">
+                        <div class="space-y-6">
+                            <p class="text-xl leading-relaxed text-gray-700 font-light">
+                                BKK Tech Sisterhood is more than a meetup; it's a movement. We believe that technology shouldn't feel cold and industrial. 
+                            </p>
+                            <p class="text-xl leading-relaxed text-gray-700 font-light">
+                                We've curated a space that celebrates softness, pastel minimalism, and organic growth, providing a sanctuary for women to learn Generative AI, Web Dev, and UX without the intimidation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Grid Section -->
+        <section id="events" class="py-32 bg-mint-green/10">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-20">
+                    <div class="text-center md:text-left">
+                        <h2 class="text-5xl font-serif mb-4">Upcoming Gatherings</h2>
+                        <p class="text-tech-purple font-semibold tracking-widest uppercase italic text-sm">The Workshop Series</p>
+                    </div>
+                    <div class="mt-8 md:mt-0 px-8 py-3 bg-white border border-soft-pink rounded-full font-bold shadow-sm">
+                        Total Sessions: 128
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-10">
+                    <!-- Event 1 -->
+                    <article class="bg-white p-10 rounded-[2rem] border border-soft-pink hover:border-tech-purple transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-soft-pink/20 rounded-bl-full transition-all group-hover:w-32 group-hover:h-32"></div>
+                        <div class="text-soft-pink font-bold text-6xl mb-6 opacity-40 italic">01</div>
+                        <h3 class="text-2xl font-serif mb-4 group-hover:text-tech-purple transition-colors">Generative AI Foundations</h3>
+                        <p class="text-gray-600 mb-8 leading-relaxed">A beginner-friendly dive into Midjourney for designers and GPT automation for creative professional workflows.</p>
+                        <div class="pt-6 border-t border-gray-100 flex justify-between items-center text-xs font-bold tracking-widest uppercase">
+                            <span class="text-gray-400">June 15, 2024</span>
+                            <span class="text-tech-purple">RSVP Open</span>
+                        </div>
+                    </article>
+
+                    <!-- Event 2 -->
+                    <article class="bg-white p-10 rounded-[2rem] border border-soft-pink hover:border-tech-purple transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-mint-green/20 rounded-bl-full transition-all group-hover:w-32 group-hover:h-32"></div>
+                        <div class="text-soft-pink font-bold text-6xl mb-6 opacity-40 italic">02</div>
+                        <h3 class="text-2xl font-serif mb-4 group-hover:text-tech-purple transition-colors">Sisterhood Pitch Night</h3>
+                        <p class="text-gray-600 mb-8 leading-relaxed">Present your side projects in a supportive, constructive environment with industry mentors from Bangkok's top firms.</p>
+                        <div class="pt-6 border-t border-gray-100 flex justify-between items-center text-xs font-bold tracking-widest uppercase">
+                            <span class="text-gray-400">June 28, 2024</span>
+                            <span class="text-tech-purple">Waitlist</span>
+                        </div>
+                    </article>
+
+                    <!-- Event 3 -->
+                    <article class="bg-white p-10 rounded-[2rem] border border-soft-pink hover:border-tech-purple transition-all group relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-tech-purple/20 rounded-bl-full transition-all group-hover:w-32 group-hover:h-32"></div>
+                        <div class="text-soft-pink font-bold text-6xl mb-6 opacity-40 italic">03</div>
+                        <h3 class="text-2xl font-serif mb-4 group-hover:text-tech-purple transition-colors">Pastel UI Design Sprint</h3>
+                        <p class="text-gray-600 mb-8 leading-relaxed text-balance">Master the art of high-aesthetic interfaces using Figma and modern Tailwind CSS gradient systems.</p>
+                        <div class="pt-6 border-t border-gray-100 flex justify-between items-center text-xs font-bold tracking-widest uppercase">
+                            <span class="text-gray-400">July 04, 2024</span>
+                            <span class="text-tech-purple">Coming Soon</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Groups Section -->
+        <section id="work-groups" class="py-32 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-20">
+                    <h2 class="text-5xl font-serif italic mb-6">Our Co-working Rituals</h2>
+                    <p class="text-gray-500 max-w-xl mx-auto text-lg leading-relaxed">Rotating deep-work sessions hosted at the most inspiring spots in Bangkok.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-16">
+                    <!-- Location 1 -->
+                    <div class="group relative overflow-hidden rounded-[3rem] h-[500px] shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1000&h=800&fit=crop" alt="True Digital Park Co-working" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-tech-purple/90 to-transparent flex flex-col justify-end p-12 text-white">
+                            <span class="font-bold tracking-widest uppercase text-xs mb-2 opacity-80">Tech Tuesday</span>
+                            <h3 class="text-4xl font-serif mb-4">True Digital Park</h3>
+                            <p class="text-lg font-light opacity-90">Deep work sessions in the heart of Punnawithi. High-speed coffee and peer programming.</p>
+                        </div>
+                    </div>
+
+                    <!-- Location 2 -->
+                    <div class="group relative overflow-hidden rounded-[3rem] h-[500px] shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1000&h=800&fit=crop" alt="Thong Lo Cafe Co-working" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-soft-pink/90 to-transparent flex flex-col justify-end p-12 text-sisterhood-dark">
+                            <span class="font-bold tracking-widest uppercase text-xs mb-2 opacity-80">Slow-Code Fridays</span>
+                            <h3 class="text-4xl font-serif mb-4">The Hive (Thong Lo)</h3>
+                            <p class="text-lg opacity-90 font-light">A curated experience focused on design thinking and collaborative solving over local roasts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-24 bg-tech-purple relative overflow-hidden text-center text-white">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-4xl md:text-6xl font-serif italic mb-8">Ready to write your next commit?</h2>
+                <p class="text-xl mb-12 font-light max-w-2xl mx-auto opacity-90">Applications for the Summer cohort are now open. We welcome women of all skill levels who share our passion for aesthetics and innovation.</p>
+                <a href="https://forms.google.com" target="_blank" class="inline-block bg-white text-tech-purple px-12 py-5 rounded-full font-extrabold text-xl hover:bg-soft-pink hover:text-sisterhood-dark transition-all transform hover:scale-105 shadow-2xl">Apply to the Sisterhood</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-sisterhood-dark text-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-16">
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-serif font-bold italic text-soft-pink mb-6">BKK Tech Sisterhood</div>
+                    <p class="text-gray-400 max-w-sm leading-relaxed mb-8">Redefining the tech industry in Thailand through community, creativity, and the "Etherea" aesthetic.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-white hover:text-soft-pink transition-colors">Instagram</a>
+                        <a href="#" class="text-white hover:text-soft-pink transition-colors">LinkedIn</a>
+                        <a href="#" class="text-white hover:text-soft-pink transition-colors">Threads</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-8 text-soft-pink tracking-widest uppercase text-xs">Community</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition-colors">The Vision</a></li>
+                        <li><a href="#events" class="hover:text-white transition-colors">Calendar</a></li>
+                        <li><a href="#work-groups" class="hover:text-white transition-colors">Locations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-8 text-soft-pink tracking-widest uppercase text-xs">Get in Touch</h4>
+                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">hello@bkktechsisterhood.com</p>
+                    <div class="inline-flex items-center space-x-2 bg-green-500/10 px-4 py-2 rounded-full border border-green-500/30">
+                        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                        <span class="text-xs text-green-400 font-bold uppercase tracking-wider">Join Now</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 pt-12 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2024 BKK Tech Sisterhood. Built with ♡ in Bangkok.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0 italic">
+                    <span>Forward-thinking. Together.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Entry -->
+    <script src="js/script.js"></script>
+</body>
+</html>
